@@ -1,0 +1,23 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": ",-----.,--.                  ,--. ,---.   ,--.,------.  ,------.     '  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---'     |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \\  :|  `--,      '  '--'\\|  |' '-' ''  ''  '\\ `-' | .'  /   |  ||  '--'  /|  `---.      `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'     -----------------------------------------------------------------",
+  "main": "meadowlark.js",
+  "scripts": {
+    "test": "jasmine-node spec/ --autotest --watch **/*.js --color --verbose --captureExceptions"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  },
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.13.1",
+    "express-handlebars": "^2.0.1",
+    "express3-handlebars": "^0.5.2",
+    "lodash": "^3.10.0",
+    "mongoose": "^4.0.6",
+    "q": "^1.4.1"
+  }
+}
