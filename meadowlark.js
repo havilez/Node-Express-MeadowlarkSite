@@ -13,7 +13,7 @@ var fortunes = [
     "Rivers need springs.",
     "Do not fear what you don't know",
     "You will have a pleasant suprise.",
-    "Whenever possiblw, keep it simple"
+    "Whenever possible, keep it simple"
 ];
 
 var app = express();
