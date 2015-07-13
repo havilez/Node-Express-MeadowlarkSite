@@ -2,6 +2,7 @@
 var _ = require('lodash');
 var express = require('express');
 var jade = require('jade');
+var logger = require('morgan');
 
 // setup handlebars view engine
 //var handlebars = require('express-handlebars').create({defaultLayout:'main' });
@@ -24,6 +25,8 @@ app.set('view engine','jade');
 app.locals.pretty = true;
 
 
+app.use(logger('short'));
+
 app.get('/', function (req, res) {
     res.render('home');
 
@@ -35,7 +38,8 @@ app.get('/about', function (req, res) {
     res.render('about', {fortune: randomFortune});
 });
 
-// custom 404 page
+// custom 404 page -- Note: next is not used as param , since don't want calls
+// to other middleware
 app.use(function (req,res) {
     res.status(404);
     res.render('404');

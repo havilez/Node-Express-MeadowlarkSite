@@ -9,7 +9,8 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "jasmine-node": "^1.14.5"
+    "jasmine-node": "^1.14.5",
+    "morgan": "^1.6.1"
   },
   "dependencies": {
     "colors": "^1.1.2",
